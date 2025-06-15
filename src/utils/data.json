@@ -1,0 +1,53 @@
+[
+  {
+    "userName": "Admin",
+    "userType": "admin",
+    "email": "admin@gmail.com",
+    "password": "$2b$10$YQ2mxsVTXXCYGfbWfRHM5OSZ6DiBKJ/6Sig5UWqeW0pyaVHjBcg7.",
+    "language": "English",
+    "address": "Admin Office, City Center",
+    "standard": null,
+    "subjects": []
+  },
+
+  {
+    "userName": "Mayur Patil",
+    "userType": "student",
+    "email": "mayur@gmail.com",
+    "password": "$2b$10$0v/HmvzxVwOZWlyjmZPJSu1JOOFhMmVbmH8B6n7orZ0wLPWP1r8te",
+    "language": "English",
+    "address": "123 Street, Delhi",
+    "standard": "8th",
+    "subjects": ["Maths", "Science", "History"]
+  },
+  {
+    "userName": "Shubham Patil",
+    "userType": "student",
+    "email": "shubham@gmail.com",
+    "password": "$2b$10$I1y9Z4nlpnHZ1xETW1l0ruxQ3OdwYT6jnLUYfqaL6I8ylL35ZBi.G",
+    "language": "German",
+    "address": "456 Lane, Mumbai",
+    "standard": "9th",
+    "subjects": ["Science", "Geography"]
+  },
+  {
+    "userName": "Jayesh Jain",
+    "userType": "student",
+    "email": "jayesh@gmail.com",
+    "password": "$2b$10$e0NyB/Z/Zxc.tpSnVhpyeODBEB4M4pKuNApvBWCxR/qZVtkKZimR6",
+    "language": "English",
+    "address": "78 Sector, Pune",
+    "standard": "10th",
+    "subjects": ["Maths", "History"]
+  },
+  {
+    "userName": "Yograj Patil",
+    "userType": "student",
+    "email": "yograj@gmail.com",
+    "password": "$2b$10$S7An9Q0KbeSi.xlhqLCF5u0CQTY7iaSbaOItF0WkApGrV.wz8MPcq",
+    "language": "English",
+    "address": "78 Sector, Pune",
+    "standard": "10th",
+    "subjects": ["Maths", "History"]
+  }
+]
