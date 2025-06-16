@@ -54,25 +54,32 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="border bg-gray-300 h-96 w-md m-auto mt-20 rounded-2xl flex flex-col gap-10 py-8">
+    <div className="bg-white text-black h-[450px] w-[400px] m-auto mt-20 rounded-2xl flex flex-col gap-10 py-8">
       <div className="flex justify-center items-center text-2xl font-semibold ">
         Login page
       </div>
       <div className="flex flex-col gap-4 px-4 relative">
-        <input
-          type="email"
-          placeholder="Email"
-          className="border h-10 px-4"
-          name="email"
-          onChange={getloginData}
-        />
-        <input
-          type={showPass ? "password" : "text"}
-          placeholder="Password"
-          className="border h-10 px-4"
-          name="password"
-          onChange={getloginData}
-        />
+        <div className="flex flex-col gap-1">
+          <label className="ml-1.5 text-xl font-semibold">Email</label>
+          <input
+            type="email"
+            placeholder="Enter email"
+            className="border h-10 px-4 rounded-xl"
+            name="email"
+            onChange={getloginData}
+          />
+        </div>
+        <div className="flex flex-col gap-1">
+          <label className="ml-1.5 text-xl font-semibold">Password</label>
+          <input
+            type={showPass ? "password" : "text"}
+            placeholder="Enter password"
+            className="border h-10 px-4 rounded-xl"
+            name="password"
+            onChange={getloginData}
+          />
+        </div>
+
         {showPass ? (
           <IoEyeSharp
             onClick={() => {
@@ -98,7 +105,7 @@ const LoginPage = () => {
       )}
       <div
         onClick={submmitData}
-        className="border bg-red-500 mx-auto w-34 h-10 flex justify-center items-center hover:cursor-pointer"
+        className="border bg-cyan-900 mx-auto w-[350px] rounded-xl text-white h-10 flex justify-center items-center hover:cursor-pointer"
       >
         Log In
       </div>
