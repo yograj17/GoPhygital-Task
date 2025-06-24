@@ -8,6 +8,9 @@ import { data, useNavigate } from "react-router";
 const LoginPage = () => {
   const [showPass, setShowpass] = useState(1);
   const [loginData, setloginData] = useState({ email: "", password: "" });
+
+  localStorage.setItem("login", "false");
+
   const [iserror, seterror] = useState(0);
   const [errormessage, seterrormessage] = useState("");
   const navigate = useNavigate();
@@ -27,8 +30,10 @@ const LoginPage = () => {
       seterror(1);
       seterrormessage("Invalid password");
     } else if (data.userType == "student") {
+      localStorage.setItem("login","true")
       navigate("/student-dashbord", { state: { data } });
     } else if (data.userType == "admin") {
+      localStorage.setItem("login","true")
       navigate("/admin-dashbord");
     }
   };
@@ -51,6 +56,7 @@ const LoginPage = () => {
     }
 
     passCheck(loginData.password, user[0].password, user[0]);
+
   };
 
   return (
